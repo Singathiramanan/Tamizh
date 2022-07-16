@@ -1,4 +1,3 @@
-@first
 Feature: Gmail Task 
 
 Scenario Outline: Login Email Page 
