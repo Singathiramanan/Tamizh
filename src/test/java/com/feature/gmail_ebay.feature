@@ -1,3 +1,4 @@
+@first
 Feature: Gmail Task 
 
 Scenario Outline: Login Email Page 
@@ -17,5 +18,4 @@ Scenario Outline: Login Password Page
 	
 	Examples: 
 		|password|
-		|S3l1n1um|
-		
+		|S3l1n1um|	

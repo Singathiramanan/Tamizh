@@ -9,7 +9,7 @@ public class EbayHomePage {
 	public static WebDriver driver;
 	public EbayHomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		this.driver = driver;
+		EbayHomePage.driver = driver;
 	}
 	
 	@FindBy(xpath = "//input[@type='text']")

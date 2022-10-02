@@ -7,7 +7,7 @@ public class SingletonDesignPattern {
 	public static WebDriver driver;
 	public SingletonDesignPattern(WebDriver driver2) {
 		PageFactory.initElements(driver2, this);
-		this.driver = driver2;
+		SingletonDesignPattern.driver = driver2;
 	}
 	
 	public LoginEmailPage getLoginEmailPage() {
