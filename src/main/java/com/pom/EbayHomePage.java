@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class EbayHomePage {
-	public static WebDriver driver;
+	public WebDriver driver;
 	public EbayHomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;

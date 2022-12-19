@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ElectricGuitarPage {
-	public static WebDriver driver;
+	public WebDriver driver;
 	public ElectricGuitarPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;

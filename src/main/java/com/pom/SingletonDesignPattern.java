@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class SingletonDesignPattern {
-	public static WebDriver driver;
+	public WebDriver driver;
 	public SingletonDesignPattern(WebDriver driver2) {
 		PageFactory.initElements(driver2, this);
 		this.driver = driver2;

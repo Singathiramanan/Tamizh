@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginEmailPage {
-	public static WebDriver driver;
+	public WebDriver driver;
 	public LoginEmailPage(WebDriver driver2) {
 		PageFactory.initElements(driver2, this);
 		this.driver = driver2;

@@ -21,7 +21,8 @@ public static WebDriver driver;
 	
 	@BeforeClass
 	public static void setUp() throws IOException {
-		String bowser = ConfigurationHelper.getInstance().getInstanceCR().getBowser();
+		ConfigurationHelper.getInstance();
+		String bowser = ConfigurationHelper.getInstanceCR().getBowser();
 		driver= BaseClass.driverLaunch(bowser);
 	}
 }
