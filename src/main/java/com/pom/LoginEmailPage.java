@@ -9,7 +9,7 @@ public class LoginEmailPage {
 	public static WebDriver driver;
 	public LoginEmailPage(WebDriver driver2) {
 		PageFactory.initElements(driver2, this);
-		LoginEmailPage.driver = driver2;
+		this.driver = driver2;
 	}
 	
 	@FindBy(xpath = "//input[@type='email']")

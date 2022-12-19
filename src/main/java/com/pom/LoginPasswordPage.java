@@ -9,7 +9,7 @@ public class LoginPasswordPage {
 	public static WebDriver driver;
 	public LoginPasswordPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		LoginPasswordPage.driver = driver;
+		this.driver = driver;
 	}
 	
 	@FindBy(xpath = "//input[@type='password']")

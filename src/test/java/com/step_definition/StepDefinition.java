@@ -18,8 +18,7 @@ public class StepDefinition extends BaseClass {
 
 	@Given("^user Launch The Url$")
 	public void user_Launch_The_Url() throws Throwable {
-		ConfigurationHelper.getInstance();
-		String url1 = ConfigurationHelper.getInstanceCR().getUrl1();
+		String url1 = ConfigurationHelper.getInstance().getInstanceCR().getUrl1();
 		urlLaunch(url1);
 	}
 

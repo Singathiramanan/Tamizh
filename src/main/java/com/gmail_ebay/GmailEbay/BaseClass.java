@@ -17,8 +17,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BaseClass {
 	public static WebDriver driver = null;
 	
@@ -27,10 +25,7 @@ public class BaseClass {
 	}
 
 	public static void userClick(WebElement element) {
-		//element.click();
-		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();",element);	
-			
+		element.click();
 	}
 
 	public static void elementText(WebElement element) {
@@ -67,8 +62,7 @@ public class BaseClass {
 	public static WebDriver driverLaunch(String option) {
 		
 		if (option.equalsIgnoreCase("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else {
 			System.out.println("Invalid Browser");

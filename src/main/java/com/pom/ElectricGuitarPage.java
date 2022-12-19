@@ -9,7 +9,7 @@ public class ElectricGuitarPage {
 	public static WebDriver driver;
 	public ElectricGuitarPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		ElectricGuitarPage.driver = driver;
+		this.driver = driver;
 	}
 	
 	@FindBy(xpath = "(//span[@class='s-item__price'])[2]")

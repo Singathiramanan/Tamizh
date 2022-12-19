@@ -8,7 +8,7 @@ import java.util.Properties;
 public class ConfigurationReader {
 	public static Properties p;
 	public ConfigurationReader() throws IOException {
-		File f = new File("E:\\Disk2\\Eclipse\\tamizh1\\src\\main\\java\\com\\properties\\email.properties");
+		File f = new File("C:\\Users\\tamizh\\eclipse-workspace\\GmailEbay\\src\\main\\java\\com\\properties\\email.properties");
 		FileInputStream fis = new FileInputStream(f);
 		p = new Properties();
 		p.load(fis);

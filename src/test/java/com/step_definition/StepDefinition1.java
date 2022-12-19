@@ -18,8 +18,7 @@ public class StepDefinition1 extends BaseClass{
 	@Given("^user Launch The Ebay Url$")
 	public void user_Launch_The_Ebay_Url() throws Throwable {
 		implicitWait();
-		ConfigurationHelper.getInstance();
-		String url2 = ConfigurationHelper.getInstanceCR().getUrl2();
+		String url2 = ConfigurationHelper.getInstance().getInstanceCR().getUrl2();
 		urlLaunch(url2);
 	}
 
