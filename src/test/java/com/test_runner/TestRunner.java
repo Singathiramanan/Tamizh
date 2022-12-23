@@ -13,7 +13,7 @@ import com.properties.ConfigurationHelper;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src\\test\\java\\com\\feature\\gmail_ebay.feature", "src\\test\\java\\com\\feature\\gmail_ebay1.feature"},
+@CucumberOptions(features = {"/tamizh1/src/test/java/com/feature/gmail_ebay.feature", "/tamizh1/src/test/java/com/feature/gmail_ebay1.feature"},
 					glue = "com.step_definition", dryRun = false,
 					tags = {"@ebay"}, monochrome = true)
 public class TestRunner {
